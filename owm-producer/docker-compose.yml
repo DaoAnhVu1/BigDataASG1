@@ -4,6 +4,7 @@ services:
   openweathermap:
     container_name: openweathermap
     build: .
+    command: sleep infinity
     environment:
       KAFKA_BROKER_URL: broker:9092
       TOPIC_NAME: weather
